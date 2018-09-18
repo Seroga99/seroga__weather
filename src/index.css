@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eee;
+}
+.app {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  display: block;
+  left: 0;
+  right: 0;
+  background-image: url('./img/sky.jpg');
+  box-shadow: inset 0px -171px 186px -71px rgba(238,238,238,1);
+  }
