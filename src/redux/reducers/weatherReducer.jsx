@@ -1,4 +1,4 @@
-export default function weather (state = [], action) {
+export default function weather (state = {}, action) {
     switch(action.type) {
         case 'WEATHER':
             return action.data
@@ -6,4 +6,4 @@ export default function weather (state = [], action) {
         default:
             return state
     }
-}
+}   

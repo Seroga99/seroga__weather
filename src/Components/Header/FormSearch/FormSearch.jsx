@@ -12,9 +12,9 @@ const FormSearch = (props) => {
         props.getValue(value)
     }
     const SerarchCity = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         props.SerarchCity(props.value)
-    }
+    }   
     return (
         <div>
             <form onSubmit={SerarchCity} className='form'>

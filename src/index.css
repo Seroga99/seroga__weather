@@ -11,6 +11,17 @@ body {
   display: block;
   left: 0;
   right: 0;
-  background-image: url('./img/sky.jpg');
   box-shadow: inset 0px -171px 186px -71px rgba(238,238,238,1);
   }
+  .bgc__day {
+    background-image: url('./img/sky.jpg');
+  }
+  .bgc__night {
+    background-image: url('./img/sky-night.jpg');
+  }
+@media(min-width: 1240px) {
+  .wrapper {
+    margin: auto;
+    width: 1100px;
+  }
+}

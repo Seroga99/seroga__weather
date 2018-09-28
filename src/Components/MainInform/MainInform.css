@@ -1,0 +1,40 @@
+.mainInfo__container {
+    margin-left: 10px;
+    margin-top: 45px;
+}
+.maininfo__info {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+.maininfo__weather {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    margin: 5px 0;
+}
+.maininfo__location {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+.font-weight {
+    font-weight: 500;
+}
+
+@media(min-width: 768px) {
+    .mainInfo__container {
+        margin-left: 30px;
+        margin-top: 45px;
+    }
+    .maininfo__info {
+        font-size: 16px;
+    }
+    .maininfo__weather {
+        font-size: 30px;
+        margin: 7px 0;
+    }
+    .maininfo__location {
+        font-size: 16px;
+    }
+}

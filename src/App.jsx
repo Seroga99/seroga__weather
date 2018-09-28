@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { weatherUserCity } from './redux/actions/weatherAction';
-import Header from './Components/Header/Header'
+import Header from './Components/Header/Header';
 import Dayes from './Components/Dayes/Dayes';
-
+// import MainInform from './Components/MainInform/MainInform';
 
 class App extends Component {
 
-  componentDidMount() {
-    this.props.weatherFetch()
 
+
+  
+  componentDidMount() {
+    this.props.weatherFetch();
   }
 
   render() {
+    {var time = new Date().getHours()}  
     return (
+    
+      <div className= {time > 19 || time < 7 ? 'bgc__night app' : 'bgc__day app' }>
+        <Header/>
         <div className='wrapper'>
-          <div className='app'>
-            <Header/>
             <Dayes/>
-          </div>
         </div>
+      </div>
     );
+  }
+}
+
+function MSTP(state){
+  return {    
+      weather: state.weather,
   }
 }
 
@@ -31,4 +41,7 @@ function MDTP(dispatch)  {
     }
   }
 }
-export default connect (null, MDTP)(App);
+export default connect (MSTP, MDTP)(App);
+
+
+

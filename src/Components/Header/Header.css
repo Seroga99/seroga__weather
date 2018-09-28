@@ -1,8 +1,8 @@
 .header {
-    height: 10vh;
+    height: 205px;
     width: 100%;
     background-color: transparent;
-    box-shadow: inset -3px 100px 100px -68px rgba(0,0,0,0.5);
+    box-shadow: inset -9px 250px 230px -170px rgba(0,0,0,0.6);
 }
 .header__container {
     margin: auto;
@@ -45,11 +45,14 @@
     .logo__link {
         font-size: 20px;
     }
+    .my_dream {
+        top: 18px;
+    }
 }
 @media(min-width: 1120px) {
     .header__container {
         position: relative;
-        width: 1200px;
+        width: 1100px;
     }
     .header {
         box-shadow: inset -3px 100px 110px -68px rgba(0,0,0,0.5);
