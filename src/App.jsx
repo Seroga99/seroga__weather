@@ -15,10 +15,11 @@ class App extends Component {
   }
 
   render() {
-    {var time = new Date().getHours()}  
+    const TIME = new Date().getHours()
+
     return (
     
-      <div className= {time > 19 || time < 7 ? 'bgc__night app' : 'bgc__day app' }>
+      <div className= {TIME > 19 || TIME < 7 ? 'bgc__night app' : 'bgc__day app' }>
         <Header/>
         <div className='wrapper'>
             <Dayes/>
