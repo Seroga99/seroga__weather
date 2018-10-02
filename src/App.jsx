@@ -6,9 +6,6 @@ import Dayes from './Components/Dayes/Dayes';
 // import MainInform from './Components/MainInform/MainInform';
 
 class App extends Component {
-
-
-
   
   componentDidMount() {
     this.props.weatherFetch();
