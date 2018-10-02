@@ -4,6 +4,6 @@ import rootReducer from './reducers/index';
 
 const DevTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();  
 
-const store = createStore(rootReducer, DevTools, applyMiddleware(thunk));
+const store = createStore(rootReducer, DevTools, applyMiddleware());
 
 export default store;
